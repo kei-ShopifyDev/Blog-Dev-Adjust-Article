@@ -76,6 +76,7 @@
                 show_date: section.settings.show_date,
                 show_author: section.settings.show_author,
                 show_excerpt: section.settings.show_excerpt,
+                excerpt_count: section.settings.excerpt_count
               %}
             </li>
           {%- endfor -%}
@@ -286,6 +287,15 @@
       "id": "show_excerpt",
       "default": true,
       "label": "抜粋の表示"
+    },
+    {
+      "type": "range",
+      "id": "excerpt_count",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "default": 30,
+      "label": "文字数"
     },
     {
       "type": "checkbox",

@@ -75,7 +75,7 @@
                 show_image: section.settings.show_image,
                 show_date: section.settings.show_date,
                 show_author: section.settings.show_author,
-                show_excerpt: true
+                show_excerpt: section.settings.show_excerpt,
               %}
             </li>
           {%- endfor -%}
@@ -280,6 +280,12 @@
       "id": "show_author",
       "default": false,
       "label": "t:sections.featured-blog.settings.show_author.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_excerpt",
+      "default": true,
+      "label": "抜粋の表示"
     },
     {
       "type": "checkbox",
